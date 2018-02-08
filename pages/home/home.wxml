@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='banner'>
+    <view style='margin-top:200rpx'>
+      <text class='banner-txt'>专业，快速，经济</text>
+      <view class='search' bindtap='SearchClick'>
+        <text>搜索家电维修</text>
+      </view>
+    </view>
+  </view>
+</view>

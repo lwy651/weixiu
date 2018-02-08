@@ -1,0 +1,29 @@
+/* pages/home/home.wxss */
+
+.banner {
+  background-image: -webkit-gradient(linear,left top,right top,from(#FD7962),to(#FB635A));
+  background-image: -webkit-linear-gradient(left,#FD7962,#FB635A);
+  background-image: linear-gradient(90deg,#FD7962,#FB635A);
+  display: block;
+  padding: 100rpx 60rpx;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.search {
+  background: #fff;
+  height: 70rpx;
+  border-radius: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+
+.search text{
+  color: #949494;
+  font-size: 30rpx;
+}
+
+.banner-txt {
+  color: #fff;
+  font-size: 40rpx;
+}
