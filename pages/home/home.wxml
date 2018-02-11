@@ -4,8 +4,18 @@
     <view style='margin-top:200rpx'>
       <text class='banner-txt'>专业，快速，经济</text>
       <view class='search' bindtap='SearchClick'>
+        <image src='./../../images/icons/search.svg'></image>
         <text>搜索家电维修</text>
       </view>
+    </view>
+  </view>
+  <view class='card_menu'>
+    <view data-url='{{itemData.url}}' bindtap='cardClick' class='card' wx:for='{{carlists}}' wx:key="card" wx:for-item='itemData'>
+      <view>
+        <view style='color:{{itemData.color}}' class='title'>{{itemData.title}}</view>
+        <view class='tips'>{{itemData.tip}}</view>
+      </view>
+      <image src='{{itemData.img}}'></image>
     </view>
   </view>
 </view>

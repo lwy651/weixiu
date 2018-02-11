@@ -1,9 +1,9 @@
 const AV = require('./utils/av-weapp-min.js')
+const { leancloudlogin } = require('./utils/util.js')
 AV.init({
   appId: 'nWWN6Dpt603K5RWOWPp3Lbhh-gzGzoHsz',
   appKey: '4qKjHph1foiYeusWApsY5FxQ',
 })
-console.log(AV.User)
 App({
 
   /**
@@ -11,6 +11,8 @@ App({
    */
   onLaunch: function () {
     console.log('mmp')
+    leancloudlogin().then(user => this.globalData.userInfo = user.toJSON())
+    console.log(this.globalData)
   },
 
   /**
@@ -32,5 +34,8 @@ App({
    */
   onError: function (msg) {
 
+  },
+  globalData: {
+    userInfo: {}
   }
 })
