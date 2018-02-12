@@ -11,4 +11,14 @@
       <text>登陆后享受更多权限</text>
     </view>
   </view>
+
 </view>
+<view class='table_menu'>
+  <view id='btn1' bindtap='menuClick' class='table_menu_item'>
+    <text>红包</text>
+  </view>
+  <view id='btn2' bindtap='menuClick' class='table_menu_item'>
+    <text>积分</text>     
+  </view>
+</view>
+<view></view>

@@ -1,2 +1,13 @@
 <!--pages/comment/comment.wxml-->
-<text>pages/comment/comment.wxml</text>
+<import src='orderitem.wxml'/>
+<view class='addOrder'>
+  <view class='addBtn'>
+    <view class='addContent'>
+      <image src='./../../images/icons/round_add_light.svg'></image>
+      <text>添加订单</text>
+    </view>
+  </view>
+</view>
+<template is='orderitem'/>
+<template is='orderitem'/>
+<template is='orderitem'/>

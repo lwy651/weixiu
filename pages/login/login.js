@@ -1,4 +1,4 @@
-// pages/user/user.js
+// pages/login/login.js
 Page({
 
   /**
@@ -63,15 +63,7 @@ Page({
   onShareAppMessage: function () {
 
   },
-  menuClick: (e) => {
+  submitClick: (e) => {
     console.log(e)
-    switch (e.currentTarget.id) {
-      case 'btn1':
-        console.log(1)
-        break;
-      case 'btn2':
-        console.log(2)
-        break;
-    }
   }
 })

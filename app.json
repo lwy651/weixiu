@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/comment/comment",
     "pages/user/user",
     "pages/home/home",
-    "pages/comment/comment"
+    "pages/login/login"
   ],
   "window": {
     "navigationStyle": "custom",

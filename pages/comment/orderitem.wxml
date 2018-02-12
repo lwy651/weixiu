@@ -1,0 +1,5 @@
+<template name='orderitem'>
+  <view class='orderitem'>
+    <text>651</text>
+  </view>
+</template>
