@@ -1,5 +1,6 @@
 <template name='orderitem'>
   <view class='orderitem'>
-    <text>651</text>
+    <image class='orderitem_icon' src='./../../images/shang.jpg'></image>
+    <view>651</view>
   </view>
 </template>
