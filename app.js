@@ -1,5 +1,6 @@
 const AV = require('./utils/av-weapp-min.js')
 const { leancloudlogin } = require('./utils/util.js')
+const Amap = require('./utils/amap-wx.js')
 AV.init({
   appId: 'nWWN6Dpt603K5RWOWPp3Lbhh-gzGzoHsz',
   appKey: '4qKjHph1foiYeusWApsY5FxQ',
@@ -13,6 +14,13 @@ App({
     console.log('mmp')
     leancloudlogin().then(user => this.globalData.userInfo = user.toJSON())
     console.log(this.globalData)
+
+    var myMap = new Amap.AMapWX({ key: '8c02ff62458f2ff648c63d66d740b17c' })
+    myMap.getPoiAround({
+      success: function (data) {
+        console.log(data)
+      }
+    })
   },
 
   /**
