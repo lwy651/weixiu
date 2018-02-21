@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/order/order",
     "pages/msite/msite",
     "pages/home/home",
     "pages/comment/comment",

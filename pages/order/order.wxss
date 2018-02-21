@@ -1,0 +1,43 @@
+/* pages/order/order.wxss */
+
+.content {
+  padding: 0 40rpx;
+  background: #fff;
+}
+
+.content input {
+  font-size: 34rpx;
+  outline: none;
+  display: inline-block;
+  height: 34rpx;
+  font-family: inherit;
+  width: 100%;
+}
+
+.formbloack {
+  display: flex;
+  display: -webkit-flex;
+  border-bottom: 1rpx solid #eee;
+}
+
+.input_wrap {
+  padding: 10rpx 0;
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 1 0;
+  align-items: center;
+}
+
+.gender_btn {
+  width: 140rpx;
+  font-size: 26rpx;
+  color: #666;
+  background: #fff;
+}
+
+.label-wrap {
+  padding: 10rpx 0;
+  font-size: 34rpx;
+  font-weight: 600;
+  flex-basis: 120rpx;
+}

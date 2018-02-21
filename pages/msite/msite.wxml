@@ -12,10 +12,20 @@
 <view>
   <text class='currentlocation'>当前地址</text>
   <view class='Obtain_location'>
-    <text>妈卖批</text>
+    <text>{{location}}</text>
     <view class='locate_panel' bindtap='locateClick'>
-      <image animation='{{RotateAniData}}' src='./../../images/icons/locate.svg'></image>
+      <image class="{{playing?'locate_animation':''}}" src='./../../images/icons/locate.svg'></image>
       <text class='relocation'>重新定位</text>
     </view>
+  </view>
+</view>
+<view>
+  <text class='currentlocation'>维修地址</text>
+  <view class='addAddres_cell'>
+    <view>
+      <text class='cell_name'>刘五一</text>
+      <text class='cell_phone'>18051462821</text>
+    </view>
+    <view class='cell_address'>银河湾第一城</view>
   </view>
 </view>
