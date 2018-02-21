@@ -1,10 +1,12 @@
 // pages/home/home.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    showAddress: false,
     carlists: [
       {
         title: '家电维修',
@@ -35,21 +37,25 @@ Page({
         url: ''
       }
     ],
-    animationData: {}
+    location: '正在定位...'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    app.globalData.Map.GetPoi()
+      .then(data => {
+        console.log(data)
+        this.setData({ location: data.poisData[0].name })
+      })
+      .catch(error => { console.log(error) })
   },
 
   /**
@@ -102,6 +108,12 @@ Page({
       return
     wx.switchTab({
       url: e.currentTarget.dataset.url,
+    })
+  },
+  locationClick: function (e) {
+    // ani
+    wx.navigateTo({
+      url: './../msite/msite',
     })
   }
 })

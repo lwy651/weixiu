@@ -1,0 +1,67 @@
+/* pages/msite/msite.wxss */
+
+.back_icon {
+  position: absolute;
+  left: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.addAddres {
+  right: 40rpx;
+  position: absolute;
+}
+
+.addAddres_input {
+  background-color: #fff;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.addAddres_input input {
+  background: #f2f2f2;
+  height: 72rpx;
+  font-size: 28rpx;
+  color: #999;
+  padding-left: 72rpx;
+  width: 100%;
+}
+
+.addAddres_input image {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  left: 36rpx;
+}
+.currentlocation{
+  padding: 40rpx 20rpx 20rpx;
+  font-weight: 200;
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+.Obtain_location{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.relocation{
+  font-weight: 400;
+  font-size: 28rpx;
+}
+
+.locate_panel{
+  display: flex;
+  align-items: center;
+  color: #fc2e4f;
+}
+.locate_panel image{
+  width: 28rpx;
+  height: 28rpx;
+}

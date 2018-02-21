@@ -3,9 +3,6 @@
 .profile {
   display: -webkit-flex;
   display: flex;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff937b), to(#fc2e4f));
-  background-image: -webkit-linear-gradient(left, #ff937b, #fc2e4f);
-  background-image: linear-gradient(90deg, #ff937b, #fc2e4f);
   padding: 200rpx 40rpx 40rpx;
   color: #fff;
   -webkit-align-items: center;

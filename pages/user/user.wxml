@@ -1,5 +1,5 @@
 <!--pages/user/user.wxml-->
-<view class='profile'>
+<view class='profile BackColor'>
   <view class='avatar'>
     <image src='./../../images/icons/avatar_default.svg'></image>
   </view>
