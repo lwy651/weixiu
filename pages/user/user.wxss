@@ -30,8 +30,9 @@
 }
 
 .profile_name {
-  font-size: 40rpx;
+  font-size: 50rpx;
   margin-bottom: 10rpx;
+  font-weight: 700;
 }
 
 .profile_phone {

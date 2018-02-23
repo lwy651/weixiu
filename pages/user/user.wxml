@@ -1,14 +1,14 @@
 <!--pages/user/user.wxml-->
 <view class='profile BackColor'>
   <view class='avatar'>
-    <image src='./../../images/icons/avatar_default.svg'></image>
+    <image src='{{userInfo.avatarUrl}}'></image>
   </view>
   <view class='profile_text'>
     <view class='profile_name'>
-      <text>登陆/注册</text>
+      <text>{{userName}}</text>
     </view>
     <view class='profile_phone'>
-      <text>登陆后享受更多权限</text>
+      <text>{{phoneNum}}</text>
     </view>
   </view>
 
@@ -18,7 +18,7 @@
     <text>红包</text>
   </view>
   <view id='btn2' bindtap='menuClick' class='table_menu_item'>
-    <text>积分</text>     
+    <text>积分</text>
   </view>
 </view>
 <view></view>

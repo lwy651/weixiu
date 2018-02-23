@@ -39,5 +39,19 @@ App({
   globalData: {
     userInfo: {},
     Map: {}
+  },
+  getUserInfo: function (cb) {
+    var that = this
+    wx.login({
+      success: function () {
+        wx.getUserInfo({
+          success: function (res) {
+            console.log(res)
+            cb(res.userInfo)
+            that.globalData.userInfo = res.userInfo
+          }
+        })
+      }
+    })
   }
 })

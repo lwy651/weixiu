@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/bindphone/bindphone",
+    "pages/user/user",
     "pages/msite/msite",
     "pages/order/order",
     "pages/home/home",
     "pages/comment/comment",
-    "pages/user/user",
     "pages/login/login"
   ],
   "window": {

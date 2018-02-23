@@ -9,9 +9,10 @@
   font-size: 34rpx;
   outline: none;
   display: inline-block;
-  height: 34rpx;
-  font-family: inherit;
+  height: 4rpx;
   width: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
 
 .formbloack {
@@ -26,6 +27,7 @@
   display: -webkit-flex;
   flex: 1 1 0;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .gender_btn {
@@ -36,8 +38,9 @@
 }
 
 .label-wrap {
-  padding: 10rpx 0;
+  padding: 16rpx 0;
   font-size: 34rpx;
   font-weight: 600;
   flex-basis: 120rpx;
+  border: 1rpx solid red;
 }

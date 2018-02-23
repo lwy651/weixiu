@@ -1,27 +1,19 @@
-// pages/user/user.js
-const app = getApp()
+// pages/bindphone/bindphone.js
+const { checkPhone, getVerify, checkCode } = require('./../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    userName:'登陆/注册',
-    phoneNum:'绑定手机号享受更多权限'
+    cancommit: true,
+    getcapBtn: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    app.getUserInfo(function (userinfo) {
-      that.setData({
-        userInfo: userinfo,
-        userName: userinfo.nickName
-      })
-    })
 
   },
 
@@ -73,15 +65,26 @@ Page({
   onShareAppMessage: function () {
 
   },
-  menuClick: (e) => {
-    console.log(e)
-    switch (e.currentTarget.id) {
-      case 'btn1':
-        console.log(1)
-        break;
-      case 'btn2':
-        console.log(2)
-        break;
+  checkPhoneNum: function (e) {
+    console.log(e.detail.value)
+    console.log(checkPhone(e.detail.value))
+    if (checkPhone(e.detail.value)) {
+      wx.showToast({
+        title: '有效的手机号！！！',
+        icon: 'none'
+      })
+    } else {
+      wx.showToast({
+        title: '无效到手机号！！！',
+        icon: 'none'
+      })
     }
+  },
+  getCode: function (e) {
+    console.log(123)
+    getVerify()
+  },
+  bindClick: function (e) {
+    console.log(e)
   }
 })
